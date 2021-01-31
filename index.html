@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Library</title>
+</head>
+
+<body>
+    <header>
+        <div class="container mx">
+
+            <div class="logo">
+                Library
+            </div>
+            <!-- <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul> -->
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <button class="btn">Search</button>
+            </div>
+        </div>
+    </header>
+    <div id="msg">
+        
+    </div>
+    <section>
+        <div class="container mx">
+            <h1>
+                Welcome to My Library
+            </h1>
+            <hr>
+            <div class="formbox">
+
+                <div class="item">
+                    <div class="label w50">
+                        <label for="Name">Name</label>
+                    </div>
+                    <div class="inp w50">
+                        <input type="text" placeholder="Enter Name" id="Name">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label w50">
+                        <label for="Author">Author</label>
+                    </div>
+                    <div class="inp w50">
+                        <input type="text" placeholder="Author" id="Author">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label w50">
+                        <label for="Type">Type</label>
+                    </div>
+                    <div class="inp radio w50">
+                        <div class="option">
+                            <input type="radio" name="type" id="Fiction" value="Fiction" checked>
+                            <label for="Fiction">Fiction</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="type" id="Computer" value="Computer Programming">
+                            <label for="Computer">Computer Programming</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="type" id="Cooking" value="Cooking">
+                            <label for="Cooking">Cooking</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <button id="addBtn" class="btn">Add Book</button>
+                </div>
+            </div>
+            <hr>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Author</th>
+                        <th>Type</th>
+                        <th>Delete Book</th>
+                    </tr>
+                </thead>
+                <tbody  id="books">
+                    <!-- <tr>
+                        <td colspan="3">
+                            <p>No books found. Please add book details to see here.</p>
+                        </td>
+                    </tr> -->
+                </tbody>
+                
+            </table>
+        </div>
+    </section>
+</body>
+<!-- <script src="index.js"></script> -->
+<script src="indexLstrg.js"></script>
+</html>
